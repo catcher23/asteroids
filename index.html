@@ -1,18 +1,20 @@
 <html>
   <head>
     <title>Asteroids</title>
-
+  <link rel="stylesheet" type="text/css" href="lib/css.css">
   </head>
 
   <body>
+    <div id="scoreBoard">Your Score : 0 - Your Life: 100 </div>
+    <div class="gameOver" style="display:none">Game Over!</div>
     <canvas></canvas>
-
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="application/javascript" src="lib/keymaster.js"></script>
-
     <script type="application/javascript" src="lib/util.js"></script>
     <script type="application/javascript" src="lib/movingObject.js"></script>
     <script type="application/javascript" src="lib/asteroid.js"></script>
     <script type="application/javascript" src="lib/ship.js"></script>
+    <script type="application/javascript" src="lib/enemy.js"></script>
     <script type="application/javascript" src="lib/bullet.js"></script>
     <script type="application/javascript" src="lib/explosion.js"></script>
     <script type="application/javascript" src="lib/game.js"></script>
