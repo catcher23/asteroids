@@ -1,5 +1,5 @@
 *{margin:0;padding:0;font-family:trebuchet ms;}
-body{width:1000px;position:relative;margin:0 auto;}
+body{width:1000px;position:fixed;padding-left:150px;margin:0 auto;}
 
 
 		#scoreBoard{color: white; text-shadow:0px 0px 0px #fff;box-shadow:0 0px 0px #aaa;width:482px;margin:0px auto 0 auto;border: none #ccc;background:transparent;font-weight:normal;padding:10px; position:fixed;}
