@@ -21,10 +21,10 @@ body{width:1000px;position:fixed;padding-left:150px;margin:0 auto;}
 
 			position:absolute;
 			top:0;
-			left:650px;
+			left:600px;
 			background:transparent;
 			color:red;
-			width:500px;
+			width:600px;
 			border:none;
 			text-align:center;
 			-moz-border-radius:0px;
@@ -40,10 +40,10 @@ body{width:1000px;position:fixed;padding-left:150px;margin:0 auto;}
 
 			position:absolute;
 			top:0;
-			left:650px;
+			left:600px;
 			background:transparent;
 			color:white;
-			width:500px;
+			width:600px;
 			border:none;
 			text-align:center;
 			-moz-border-radius:0px;
