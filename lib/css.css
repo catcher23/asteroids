@@ -1,17 +1,49 @@
 *{margin:0;padding:0;font-family:trebuchet ms;}
-body{width:1000px;position:relative;margin:0 auto;}
+body{width:1000px;position:fixed;padding-left:150px;margin:0 auto;}
 
 
-		#scoreBoard{color: white; text-shadow:0px 0px 0px #fff;box-shadow:0 0px 0px #aaa;width:482px;margin:0px auto 0 auto;border: none #ccc;background:transparent;font-weight:normal;padding:10px; position:fixed;}
+		#scoreBoard{
+			color: white;
+			text-shadow:0px 0px 0px #fff;
+			box-shadow:0 0px 0px #aaa;
+			width:482px;
+			margin:0px auto 0 auto;
+			border: none #ccc;
+			background:transparent;
+			font-weight:normal;
+			padding:10px;
+			position:fixed;
+		}
 		.gameOver{
 			font-weight:bold;
-			font-size: 50;
+			font-size: 100;
 			text-shadow:2px 2px 1px #fff;
+
 			position:absolute;
 			top:0;
-			left:438px;
+			left:600px;
 			background:transparent;
-			color:red;width:70px;
+			color:red;
+			width:600px;
+			border:none;
+			text-align:center;
+			-moz-border-radius:0px;
+			-webkit-border-radius:0px;
+			border-radius:0px;
+
+		}
+
+		.gameOver2{
+			font-weight:italic;
+			font-size: 20;
+			text-shadow:2px 2px 1px red;
+
+			position:absolute;
+			top:0;
+			left:600px;
+			background:transparent;
+			color:white;
+			width:600px;
 			border:none;
 			text-align:center;
 			-moz-border-radius:0px;
