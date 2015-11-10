@@ -1,18 +1,37 @@
 <html>
   <head>
     <title>Starbomber</title>
-  <link rel="stylesheet" type="text/css" href="lib/css.css">
+    <link rel="stylesheet" type="text/css" href="lib/css.css">
+   <link href='http://fonts.googleapis.com/css?family=Racing Sans One' rel='stylesheet' type='text/css'>
   </head>
 
   <body>
-    <div id="scoreBoard">Your Score : 0 - Your Life: 30 - Wave: 1</div>
-    <div class="enter-play"> Press Enter to Play </div>
-    <div class="instructions">Use the arrows keys to guide the ship and spacebar to shoot.
-    </div>
-    <div class="gameOver" style="display:none">Game Over</div>
-    <div class="gameOver2" style="display:none">Reload the page to try again!</div>
-    <div class="next" style="display:none">Prepare for the next wave!</div>
-    <canvas></canvas>
+
+      <div class="scoreBoard" >Your Score : 0 - Your Life: 30 - Wave: 1</div>
+
+      <div class="next">Prepare for the next wave!</div>
+
+      <div class="gameOver">Game Over</div>
+      <div class="gameOver2">Try Again!</div>
+      <div class="replay">PLAY AGAIN</div>
+    <section class='game-box'>
+      <h1 class="start">WELCOME TO STARBOMBER</h1>
+      <h2 class="start startgame" id="clickStart">Click to start!</h2>
+      <br>
+      <div class="start" id="controls">Controls:</div>
+      <div class="start" id="controls2">Arrow Keys, spacebar</div>
+      <div class="start" id="instructions">
+        Instructions: <br/>
+        You control the blue ship. Survive as many waves as you can!
+      </div>
+      <div class="result" id="player1wins">Player 1 Wins!</div>
+      <div class="result" id="computerwins">Computer Wins!</div>
+
+
+
+    </section>
+    <canvas class="canvas"></canvas>
+
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="application/javascript" src="lib/keymaster.js"></script>
     <script type="application/javascript" src="lib/util.js"></script>
@@ -27,16 +46,37 @@
     <script type="application/javascript" src="lib/game.js"></script>
     <script type="application/javascript" src="lib/gameView.js"></script>
 
-    <script type="application/javascript">
-      (function () {
-        var canvasEl = document.getElementsByTagName("canvas")[0];
-        canvasEl.width = Asteroids.Game.DIM_X;
-        canvasEl.height = Asteroids.Game.DIM_Y;
 
-        var ctx = canvasEl.getContext("2d");
-        var game = new Asteroids.Game();
-        new Asteroids.GameView(game, ctx).start();
-      })();
+    <script>
+      $('.canvas').hide();
+      $('.scoreBoard').hide();
+      $('.messages').hide();
+      $('.next').hide();
+      $('.gameOver').hide();
+      $('.gameOver2').hide();
+      $('.replay').hide();
+      $('.result').hide();
+      $('#clickStart').on("click", function () {
+      $('.scoreBoard').show();
+      $('.start').hide();
+      $('.game-box').hide();
+      $('.canvas').show();
+      $('.messages').show();
+
+        (function () {
+          var canvasEl = document.getElementsByTagName("canvas")[0];
+          canvasEl.width = Starbomber.Game.DIM_X;
+          canvasEl.height = Starbomber.Game.DIM_Y;
+
+          var ctx = canvasEl.getContext("2d");
+          game = new Starbomber.Game();
+          new Starbomber.GameView(game, ctx).start();
+        })();
+        $('.gameOver2').on('click', function () {
+       location.reload();
+        })
+      })
     </script>
+
   </body>
 </html>
