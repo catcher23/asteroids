@@ -4,17 +4,14 @@
     <link rel="stylesheet" type="text/css" href="lib/css.css">
    <link href='http://fonts.googleapis.com/css?family=Racing Sans One' rel='stylesheet' type='text/css'>
   </head>
-
   <body>
 
       <div class="scoreBoard" >Your Score : 0 - Your Life: 30 - Wave: 1</div>
-
       <div class="next">Prepare for the next wave!</div>
-
       <div class="gameOver">Game Over</div>
       <div class="gameOver2">Try Again!</div>
       <div class="replay">PLAY AGAIN</div>
-    <section class='game-box'>
+      <section class='game-box'>
       <h1 class="start">WELCOME TO STARBOMBER</h1>
       <h2 class="start startgame" id="clickStart">Click to start!</h2>
       <br>
@@ -48,12 +45,12 @@
 
 
     <script>
-      $('.canvas').hide();
-      $('.scoreBoard').hide();
-      $('.messages').hide();
       $('.next').hide();
       $('.gameOver').hide();
       $('.gameOver2').hide();
+      $('.canvas').hide();
+      $('.scoreBoard').hide();
+      $('.messages').hide();
       $('.replay').hide();
       $('.result').hide();
       $('#clickStart').on("click", function () {
@@ -62,7 +59,6 @@
       $('.game-box').hide();
       $('.canvas').show();
       $('.messages').show();
-
         (function () {
           var canvasEl = document.getElementsByTagName("canvas")[0];
           canvasEl.width = Starbomber.Game.DIM_X;
