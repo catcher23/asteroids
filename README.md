@@ -23,6 +23,9 @@ Technology used
 ### Game
 Object-oriented design using prototypical inheritance
 
+### Dual Canvas and FPS
+In order to keep the FPS high, two techniques are used. One is requestAnimationFrame(), which requests that the browser update the animation before the next repaint. Moreover, the background is rendered separately from the other images, producing a dual-canvas effect which provides for a smoother experience.
+
 #### Enemy Movement AI
 Enemies can detect the position of the user to modify shooting angle and give chase. Using Javascript's atan2 function, they modify their position based on where the user is. Their speeds are generated randomly upon creation, to ensure non-overlap.
 
