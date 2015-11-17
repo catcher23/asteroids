@@ -66,10 +66,15 @@
           canvas1.height = Starbomber.Game.DIM_Y;
           var ctx1 = canvas1.getContext("2d");
 
+          var canvas2 = document.createElement("canvas1");
+          canvas2.width = Starbomber.Game.DIM_X;
+          canvas2.height = Starbomber.Game.DIM_Y;
+          var ctx2 = canvas1.getContext("2d");
+
 
           game = new Starbomber.Game();
           gameBg = new Starbomber.GameBg();
-          new Starbomber.GameView(game, gameBg, ctx1).start();
+          new Starbomber.GameView(game, gameBg, ctx1, ctx2).start();
         })();
         $('.gameOver2').on('click', function () {
        location.reload();
