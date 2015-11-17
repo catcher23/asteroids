@@ -41,6 +41,7 @@
     <script type="application/javascript" src="lib/ebullet.js"></script>
     <script type="application/javascript" src="lib/explosion.js"></script>
     <script type="application/javascript" src="lib/game.js"></script>
+    <script type="application/javascript" src="lib/gameBg.js"></script>
     <script type="application/javascript" src="lib/gameView.js"></script>
 
 
@@ -60,13 +61,15 @@
       $('.canvas').show();
       $('.messages').show();
         (function () {
-          var canvasEl = document.getElementsByTagName("canvas")[0];
-          canvasEl.width = Starbomber.Game.DIM_X;
-          canvasEl.height = Starbomber.Game.DIM_Y;
+          var canvas1 = document.getElementsByTagName("canvas")[0];
+          canvas1.width = Starbomber.Game.DIM_X;
+          canvas1.height = Starbomber.Game.DIM_Y;
+          var ctx1 = canvas1.getContext("2d");
 
-          var ctx = canvasEl.getContext("2d");
+
           game = new Starbomber.Game();
-          new Starbomber.GameView(game, ctx).start();
+          gameBg = new Starbomber.GameBg();
+          new Starbomber.GameView(game, gameBg, ctx1).start();
         })();
         $('.gameOver2').on('click', function () {
        location.reload();
