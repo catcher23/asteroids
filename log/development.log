@@ -45776,3 +45776,63 @@ Started GET "/assets/util.self-3ff7b6d09b80d82f79992a9b0dbfab7bdc419272401f9d151
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-11-21 18:28:10 -0800
+
+
+Started GET "/" for ::1 at 2015-11-21 18:30:58 -0800
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (229.0ms)
+Completed 200 OK in 424ms (Views: 413.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-af4dc702488ca895d7a3e31a03b8d26a82823b912cddc96b04e27a721fe71994.css?body=1" for ::1 at 2015-11-21 18:30:59 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-21 18:30:59 -0800
+
+
+Started GET "/assets/asteroid.self-828caaf6abb68a63fd7df9587ce07f43413bc0afa845a8366241df4953052ac9.js?body=1" for ::1 at 2015-11-21 18:30:59 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-21 18:30:59 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-21 18:30:59 -0800
+
+
+Started GET "/assets/bullet.self-548f920bda36c29b8a2b69c576bae60a44ed70d8118a27e9a49bb338fc3e9b6b.js?body=1" for ::1 at 2015-11-21 18:30:59 -0800
+
+
+Started GET "/assets/ebullet.self-588f30bde98e659c3115536391419a19b527be851cbfa16766eb6382737bb31b.js?body=1" for ::1 at 2015-11-21 18:30:59 -0800
+
+
+Started GET "/assets/enemy.self-10911938aba093741a437778f8713c57633c310c298eeed5408b2df060e60179.js?body=1" for ::1 at 2015-11-21 18:30:59 -0800
+
+
+Started GET "/assets/explosion.self-583b4c2d0769f6208e63a8e396bdefa957af72e0316e58ae03df243d58db29aa.js?body=1" for ::1 at 2015-11-21 18:30:59 -0800
+
+
+Started GET "/assets/game.self-e6c0035e36ebd962c0bb4a7cf31826d637ff041b2e4e2021fe410fa7edcb6cf6.js?body=1" for ::1 at 2015-11-21 18:30:59 -0800
+
+
+Started GET "/assets/gameBg.self-fddbb9e4ff05882826096bfd6bf09b6bf0b856c27996fcbd6d978fe9bbad73f8.js?body=1" for ::1 at 2015-11-21 18:30:59 -0800
+
+
+Started GET "/assets/gameView.self-fb9e08d9186baf5cdd3e9f7c493833cdd42efc4b476eb48c49a976f4a825c5b9.js?body=1" for ::1 at 2015-11-21 18:30:59 -0800
+
+
+Started GET "/assets/guidebullet.self-b984bf0154aa69bd0de40fa18c4bc722a4d07a27f0874b319bd92aa0b1cd2537.js?body=1" for ::1 at 2015-11-21 18:30:59 -0800
+
+
+Started GET "/assets/keymaster.self-b9c30f6f3976fff704b9dea003f5ba3ad4edcd88191707c91c1706c33aaef3ed.js?body=1" for ::1 at 2015-11-21 18:30:59 -0800
+
+
+Started GET "/assets/movingObject.self-000fede6b07f75f35aa2572b547f3a3bf97e7f09f9aa76d36c4989c051cf52b0.js?body=1" for ::1 at 2015-11-21 18:30:59 -0800
+
+
+Started GET "/assets/ship.self-7b1b03998ffc17d95911577c56809373f5a0d73a466f34ede5b110faaeef604d.js?body=1" for ::1 at 2015-11-21 18:30:59 -0800
+
+
+Started GET "/assets/util.self-3ff7b6d09b80d82f79992a9b0dbfab7bdc419272401f9d151ad35fe217bc8ad8.js?body=1" for ::1 at 2015-11-21 18:30:59 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-11-21 18:30:59 -0800
